@@ -1,11 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import MyImage from '../assets/img/logo_light.png';
+import { Image } from 'react-native';
 
 const Home = () => {
   return (
     <View style={styles.container}>
+      <Image source={MyImage} />
       <Text style={styles.title}>THE NUMBER 1</Text>
-      <Text style={styles.card}>READING LIST APP</Text>
+      <Text>READING LIST APP</Text>
+      <Text style={styles.card}>Hello, This is a card</Text>
     </View>
   );
 };
