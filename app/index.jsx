@@ -2,10 +2,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import MyImage from '../assets/img/logo_light.png';
 import { Image } from 'react-native';
+import { Colors } from '../constants/Colors';
 
 const Home = () => {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: Colors.primary }]}>
       <Image source={MyImage} />
       <Text style={styles.title}>THE NUMBER 1</Text>
       <Text>READING LIST APP</Text>
@@ -21,7 +22,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'lightgrey',
   },
   title: {
     fontWeight: 'bold',
